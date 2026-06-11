@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>테드창 작업실 TED CHANG STUDIO</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+  html { scroll-behavior: smooth; }
+  a:hover { color: #a78bfa !important; }
+  button { transition: all 0.2s; }
+  button:hover { transform: translateY(-1px); }
+</style>
+</head>
+<body style="margin:0;padding:0;background:#0a0b10;color:#f8fafc;font-family:Inter,-apple-system,system-ui,Segoe UI,Roboto,Malgun Gothic,sans-serif;line-height:1.7;overflow-x:hidden;">
+
+<!-- HEADER / NAVIGATION -->
+<header style="position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(10,11,16,0.9);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid rgba(139,92,246,0.1);padding:16px 0;">
+  <div style="max-width:1200px;margin:0 auto;padding:0 32px;display:flex;align-items:center;justify-content:space-between;">
+    <a href="#" style="display:flex;align-items:center;gap:10px;text-decoration:none;color:#f8fafc;font-weight:700;font-size:18px;letter-spacing:-0.5px;">
+      <span style="display:inline-block;width:32px;height:32px;background:linear-gradient(135deg,#8b5cf6,#d946ef);border-radius:8px;"></span>
+      <span>테드창 <span style="font-weight:400;color:#94a3b8;">작업실</span></span>
+      <span style="font-size:11px;color:#64748b;letter-spacing:2px;font-weight:500;">TED CHANG STUDIO</span>
+    </a>
+    <nav>
+      <ul style="list-style:none;margin:0;padding:0;display:flex;gap:32px;">
+        <li><a href="#about" style="color:#94a3b8;text-decoration:none;font-size:14px;font-weight:500;">소개</a></li>
+        <li><a href="#career" style="color:#94a3b8;text-decoration:none;font-size:14px;font-weight:500;">대표 업적</a></li>
+        <li><a href="#book" style="color:#94a3b8;text-decoration:none;font-size:14px;font-weight:500;">신간 도서</a></li>
+        <li><a href="#ai-edu" style="color:#94a3b8;text-decoration:none;font-size:14px;font-weight:500;">AI 강좌</a></li>
+        <li><a href="#gallery" style="color:#94a3b8;text-decoration:none;font-size:14px;font-weight:500;">포트폴리오</a></li>
+        <li><a href="#contact" style="color:#8b5cf6;text-decoration:none;font-size:14px;font-weight:600;">문의하기</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO SECTION -->
+<section style="padding:180px 0 120px;position:relative;overflow:hidden;">
+  <div style="position:absolute;top:-200px;right:-100px;width:600px;height:600px;background:radial-gradient(circle,rgba(139,92,246,0.15),transparent 70%);border-radius:50%;pointer-events:none;"></div>
+  <div style="position:absolute;bottom:-100px;left:-50px;width:400px;height:400px;background:radial-gradient(circle,rgba(217,70,239,0.1),transparent 70%);border-radius:50%;pointer-events:none;"></div>
+  <div style="max-width:1200px;margin:0 auto;padding:0 32px;position:relative;z-index:1;">
+    <div style="display:inline-block;padding:6px 16px;background:rgba(139,92,246,0.1);border:1px solid rgba(139,92,246,0.2);border-radius:999px;font-size:12px;font-weight:600;color:#8b5cf6;letter-spacing:2px;margin-bottom:32px;">PHOTOGRAPHER & AI EDUCATOR</div>
+    <h1 style="font-size:clamp(36px,7vw,72px);font-weight:900;line-height:1.15;margin:0 0 24px;letter-spacing:-1.5px;">
+      <span style="color:#f8fafc;">0.1초의 무의식을 장악하는</span><br>
+      <span style="background:linear-gradient(135deg,#8b5cf6,#d946ef);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">비주얼 브랜딩의 과학</span>
+    </h1>
+    <p style="font-size:18px;color:#94a3b8;max-width:700px;margin:0 0 40px;line-height:1.8;">
+      30년 경력의 베테랑 사진작가이자 신간 《퍼스널 비주얼 브랜딩》 저자 임창식입니다.<br>
+      찰나의 첫인상을 결정짓는 시각 설계 기술과 AI 미디어를 융합하여 당신의 가치를 증명하는 독보적인 생산성 혁신을 선도합니다.
+    </p>
+    <div style="display:flex;gap:16px;flex-wrap:wrap;">
+      <a href="#book" style="display:inline-block;padding:14px 28px;border:1px solid rgba(139,92,246,0.4);border-radius:8px;color:#f8fafc;text-decoration:none;font-size:15px;font-weight:600;background:rgba(255,255,255,0.03);">신간 도서 보기</a>
+      <a href="#ai-edu" style="display:inline-block;padding:14px 28px;background:linear-gradient(135deg,#8b5cf6,#d946ef);border-radius:8px;color:#fff;text-decoration:none;font-size:15px;font-weight:600;box-shadow:0 4px 20px rgba(139,92,246,0.3);">강의 과정 보기</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT ME SECTION -->
+<section id="about" style="padding:100px 0;position:relative;">
+  <div style="max-width:1200px;margin:0 auto;padding:0 32px;">
+    <div style="text-align:center;margin-bottom:64px;">
+      <h2 style="font-size:16px;font-weight:700;color:#8b5cf6;letter-spacing:3px;margin:0 0 12px;">ABOUT ME</h2>
+      <p style="font-size:18px;color:#94a3b8;margin:0;">시간을 담는 프레임에서 지식의 확장으로</p>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;">
+      <div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:32px;">
+          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWMeyBj2jMcifzTPnpBYQfJBGmLw_kC55hEYzdAPolb-bOkzk1_1Kvwg2gXTATDMeTYvQeTdngQvx2MSUFkUs7Ln-MZDLnCu1VaVifK3Asfdh-4e_OmDEW2cXZyuorTyfo7UZ56peaxtPMVlJquQhB_83eyJS69fEHOSUrwk1unaRJ5JFodKu43D9hwtGp/s320/%E1%84%82%E1%85%A1_%E1%84%8C%E1%85%B3%E1%86%BC%E1%84%86%E1%85%A7%E1%86%BC%E1%84%89%E1%85%A1%E1%84%8C%E1%85%B5%E1%86%AB.jpg" alt="작가 테드창 증명사진" style="width:100%;border-radius:12px;grid-row:span 2;object-fit:cover;aspect-ratio:1/1;">
+          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjGKiM3KadMU9UhL9yZv5zOGRDZ_vz5SXaA40AjUbM6-HQKa_w_cjRf4wvQhsjKMv9EbHKC14V6XYgXItkquibnjinkLIpYUTBisl-gUrRYNj4hCK5qJMQeEEt0VjWzzQ3Ov_NlO-23DRmHuicUzlCA7ZYGp9EMNNJnFyWkChqBLEomehsU4iRTyoQZtdqO/s320/%E1%84%82%E1%85%A1_%E1%84%89%E1%85%B5%E1%84%8B%E1%85%A6%E1%84%85%E1%85%A1%E1%84%83%E1%85%B5%E1%84%8C%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AB.png" alt="작가 테드창 시에라디자인" style="width:100%;border-radius:12px;object-fit:cover;aspect-ratio:1/1;">
+          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhqmOESfUHAQps4JZv90iKoyzhHlaJ8yJIidNWS__SYvpujKIOiUy7nSNTfSRC_iwruxYC1AIQIAImddogimGYn3-P4mdiV2M9zvls92QHvpJpz8cOEFsv5U44IhMz3iWd1nQ7XRduoLnGhnMt8jPUOCG-g55ZXdTrI0J6eG2Nkh3wEA5azfvMeyx5iB-bC/s320/%E1%84%82%E1%85%A1_%E1%84%91%E1%85%B5%E1%84%8B%E1%85%A6%E1%86%AF%E1%84%85%E1%85%A1%E1%84%87%E1%85%A6%E1%86%AB.png" alt="작가 테드창 피엘라벤" style="width:100%;border-radius:12px;object-fit:cover;aspect-ratio:1/1;">
+        </div>
+        <h3 style="font-size:24px;font-weight:700;margin:0 0 16px;color:#f8fafc;">0.1초의 비주얼 설계로 미래의 자아를 시각화하다</h3>
+        <p style="color:#94a3b8;font-size:15px;line-height:1.8;margin:0 0 12px;">
+          저는 <strong style="color:#f8fafc;">아시아나항공 기술팀(정비 부문) 엔지니어 출신</strong>으로, 기계와 시스템의 정밀한 메커니즘을 과학적으로 분석하는 특별한 시선을 가졌습니다. 지난 30년간 사진가 및 <strong style="color:#f8fafc;">영상 감독·크리에이터</strong>로 활동하며, 이러한 엔지니어적 논리와 예술적 시각 서사를 하나로 결합한 독창적인 비주얼 작품을 제작해 왔습니다.
+        </p>
+        <p style="color:#94a3b8;font-size:15px;line-height:1.8;margin:0 0 12px;">
+          2026년 5월 출간된 저서 <strong style="color:#f8fafc;">《퍼스널 비주얼 브랜딩(Personal Visual Branding)》</strong>은 타인의 무의식을 장악하는 '0.1초의 첫인상 설계'와 '미래의 자아를 미리 보여주는 이미지 명함' 철학을 집대성한 결과물입니다.
+        </p>
+        <p style="color:#94a3b8;font-size:15px;line-height:1.8;margin:0;">
+          현재 명륜동에서 <strong style="color:#f8fafc;">[테드창 스튜디오 (Ted Chang Studio)]</strong>를 운영하며 제품 사진과 영상 제작을 전문으로 하고 있습니다. 경복대학교 대학원 AI기반 XR시뮬레이션 미디어콘텐츠 석사 연구원으로 활동하고 있습니다.
+        </p>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
+        <div style="background:rgba(139,92,246,0.05);border:1px solid rgba(139,92,246,0.15);border-radius:16px;padding:32px 24px;text-align:center;">
+          <div style="font-size:48px;font-weight:900;color:#8b5cf6;margin-bottom:8px;">30+</div>
+          <div style="font-size:14px;color:#94a3b8;font-weight:500;">사진작가 경력 (년)</div>
+        </div>
+        <div style="background:rgba(139,92,246,0.05);border:1px solid rgba(139,92,246,0.15);border-radius:16px;padding:32px 24px;text-align:center;">
+          <div style="font-size:32px;font-weight:900;color:#f8fafc;margin-bottom:8px;">AI</div>
+          <div style="font-size:14px;color:#94a3b8;font-weight:500;">XR 미디어콘텐츠 석사 연구원</div>
+        </div>
+        <div style="background:rgba(139,92,246,0.05);border:1px solid rgba(139,92,246,0.15);border-radius:16px;padding:32px 24px;text-align:center;">
+          <div style="font-size:24px;font-weight:900;color:#8b5cf6;margin-bottom:8px;">Asiana</div>
+          <div style="font-size:14px;color:#94a3b8;font-weight:500;">아시아나항공 기술팀</div>
+        </div>
+        <div style="background:rgba(139,92,246,0.05);border:1px solid rgba(139,92,246,0.15);border-radius:16px;padding:32px 24px;text-align:center;">
+          <div style="font-size:24px;font-weight:900;color:#f8fafc;margin-bottom:8px;">Educator</div>
+          <div style="font-size:14px;color:#94a3b8;font-weight:500;">예술전문강사 / 메타버스 지도사</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CAREER & HISTORY SECTION -->
+<section id="career" style="padding:100px 0;position:relative;">
+  <div style="max-width:1000px;margin:0 auto;padding:0 32px;">
+    <div style="text-align:center;margin-bottom:64px;">
+      <h2 style="font-size:16px;font-weight:700;color:#8b5cf6;letter-spacing:3px;margin:0 0 12px;">CAREER & HISTORY</h2>
+      <p style="font-size:18px;color:#94a3b8;margin:0;">시각 예술과 AI 미디어의 융합을 이끌어온 발자취</p>
+    </div>
+    <div style="display:flex;gap:8px;margin-bottom:32px;flex-wrap:wrap;justify-content:center;">
+      <button style="padding:10px 20px;background:rgba(139,92,246,0.15);border:1px solid #8b5cf6;border-radius:8px;color:#8b5cf6;font-size:14px;font-weight:600;cursor:pointer;">주요 약력 & 학력</button>
+      <button style="padding:10px 20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:8px;color:#94a3b8;font-size:14px;font-weight:500;cursor:pointer;">사진 & 미디어 경력</button>
+      <button style="padding:10px 20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:8px;color:#94a3b8;font-size:14px;font-weight:500;cursor:pointer;">사진 및 미디어 교육</button>
+      <button style="padding:10px 20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:8px;color:#94a3b8;font-size:14px;font-weight:500;cursor:pointer;">전시 & 미디어 기고</button>
+    </div>
+    <div style="background:rgba(139,92,246,0.03);border-left:3px solid #8b5cf6;border-radius:0 12px 12px 0;padding:40px;">
+      <h3 style="font-size:20px;font-weight:700;color:#f8fafc;margin:0 0 32px;">▪ 주요 약력 & 전문 자격</h3>
+      <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:28px;">
+        <li>
+          <strong style="color:#8b5cf6;font-size:15px;display:block;margin-bottom:4px;">학력 및 연구</strong>
+          <span style="color:#f8fafc;font-size:16px;">경복대학교 대학원 석사 과정</span>
+          <span style="color:#64748b;font-size:14px;display:block;">AI기반 XR시뮬레이션 콘텐츠 전공</span>
+        </li>
+        <li>
+          <strong style="color:#8b5cf6;font-size:15px;display:block;margin-bottom:4px;">공군 경력</strong>
+          <span style="color:#f8fafc;font-size:16px;">대한민국 공군 부사관</span>
+          <span style="color:#64748b;font-size:14px;display:block;">1991년 ~ 1996년 복무</span>
+        </li>
+        <li>
+          <strong style="color:#8b5cf6;font-size:15px;display:block;margin-bottom:4px;">항공 엔지니어</strong>
+          <span style="color:#f8fafc;font-size:16px;">아시아나항공 기술팀(정비 부문) 엔지니어</span>
+          <span style="color:#64748b;font-size:14px;display:block;">1996년 ~ 1999년 근무</span>
+        </li>
+        <li>
+          <strong style="color:#8b5cf6;font-size:15px;display:block;margin-bottom:4px;">파트너 매거진</strong>
+          <span style="color:#f8fafc;font-size:15px;display:block;">• 여행 매거진 '트래비 (Travie)' 공식 포토그래퍼</span>
+          <span style="color:#f8fafc;font-size:15px;display:block;">• 러닝 매거진 '런시티 (Run City)' 공식 포토그래퍼</span>
+          <span style="color:#f8fafc;font-size:15px;display:block;">• '월간항공' 공식 포토그래퍼 & 사진·원고 기고</span>
+          <span style="color:#f8fafc;font-size:15px;display:block;">• '괌 국제 마라톤' 한국 공식 사진가 파견</span>
+        </li>
+        <li>
+          <strong style="color:#8b5cf6;font-size:15px;display:block;margin-bottom:4px;">대표 약력</strong>
+          <span style="color:#f8fafc;font-size:15px;display:block;">• 올림푸스한국(주) 강사 및 전담 작가</span>
+          <span style="color:#f8fafc;font-size:15px;display:block;">• 문화체육관광부 지정 예술전문강사</span>
+          <span style="color:#f8fafc;font-size:15px;display:block;">• 원주시 영상미디어센터 헤드강사</span>
+          <span style="color:#f8fafc;font-size:15px;display:block;">• 원주시 관내 초·중·고 사진/영상 전담 강사</span>
+          <span style="color:#f8fafc;font-size:15px;display:block;">• 2022 전국생활문화축제 백서 총괄 포토그래퍼</span>
+          <span style="color:#f8fafc;font-size:15px;display:block;">• 2024 인열왕후 선발대회 심사위원</span>
+        </li>
+        <li>
+          <strong style="color:#8b5cf6;font-size:15px;display:block;margin-bottom:4px;">전문 자격</strong>
+          <span style="color:#f8fafc;font-size:15px;display:block;">• 3D펜코딩융합과학지도사 자격 취득</span>
+          <span style="color:#f8fafc;font-size:15px;display:block;">• 메타버스교육전문지도사 자격 취득</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- REPRESENTATIVE WORK SECTION -->
+<section style="padding:100px 0;position:relative;">
+  <div style="max-width:1200px;margin:0 auto;padding:0 32px;">
+    <div style="text-align:center;margin-bottom:64px;">
+      <h2 style="font-size:16px;font-weight:700;color:#8b5cf6;letter-spacing:3px;margin:0 0 12px;">REPRESENTATIVE WORK</h2>
+      <p style="font-size:18px;color:#94a3b8;margin:0;">사진, 영화, 책, 그리고 미디어 방송 출연까지</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;">
+      <div style="background:rgba(139,92,246,0.03);border:1px solid rgba(139,92,246,0.1);border-radius:16px;padding:32px;text-align:center;">
+        <div style="display:inline-block;padding:4px 12px;background:rgba(139,92,246,0.1);border-radius:6px;font-size:12px;color:#8b5cf6;font-weight:600;margin-bottom:16px;">FILM</div>
+        <h3 style="font-size:18px;font-weight:700;color:#f8fafc;margin:0 0 8px;">단편영화 〈바퀴와 바닐라〉 총감독</h3>
+        <div style="font-size:13px;color:#d946ef;font-weight:600;margin-bottom:12px;">2025 반딧불영화제 '최고 감독상' 수상</div>
+        <p style="color:#94a3b8;font-size:14px;line-height:1.7;margin:0;">휠체어를 사용하는 청년들의 사회적 장벽과 편견 극복의 자립 여정을 담은 16분 극영화입니다.</p>
+      </div>
+      <div style="background:rgba(139,92,246,0.03);border:1px solid rgba(139,92,246,0.1);border-radius:16px;padding:32px;text-align:center;">
+        <div style="display:inline-block;padding:4px 12px;background:rgba(139,92,246,0.1);border-radius:6px;font-size:12px;color:#8b5cf6;font-weight:600;margin-bottom:16px;">BOOK</div>
+        <h3 style="font-size:18px;font-weight:700;color:#f8fafc;margin:0 0 8px;">저서 《퍼스널 비주얼 브랜딩》 집필</h3>
+        <div style="font-size:13px;color:#d946ef;font-weight:600;margin-bottom:12px;">2026년 5월 출판 단행본</div>
+        <p style="color:#94a3b8;font-size:14px;line-height:1.7;margin:0;">프로필 사진 연출법과 미디어를 접목한 셀프 브랜딩 전략을 체계적으로 다룬 가이드북입니다.</p>
+      </div>
+      <div style="background:rgba(139,92,246,0.03);border:1px solid rgba(139,92,246,0.1);border-radius:16px;padding:32px;text-align:center;">
+        <div style="display:inline-block;padding:4px 12px;background:rgba(139,92,246,0.1);border-radius:6px;font-size:12px;color:#8b5cf6;font-weight:600;margin-bottom:16px;">MEDIA</div>
+        <h3 style="font-size:18px;font-weight:700;color:#f8fafc;margin:0 0 8px;">TV 방송 출연 & 지역 미디어 공헌</h3>
+        <div style="font-size:13px;color:#d946ef;font-weight:600;margin-bottom:12px;">2025 방송 피처 및 포럼 패널</div>
+        <p style="color:#94a3b8;font-size:14px;line-height:1.7;margin:0;">G1/KBS 등 지역 방송에 단편영화 연출가로 특별 소개되었으며, 원주시민미디어포럼 패널로 초빙되었습니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEW BOOK SECTION -->
+<section id="book" style="padding:100px 0;position:relative;background:rgba(139,92,246,0.02);">
+  <div style="max-width:1000px;margin:0 auto;padding:0 32px;">
+    <div style="text-align:center;margin-bottom:64px;">
+      <h2 style="font-size:16px;font-weight:700;color:#8b5cf6;letter-spacing:3px;margin:0 0 12px;">NEW BOOK</h2>
+      <p style="font-size:18px;color:#94a3b8;margin:0;">시각 혁신을 이끄는 퍼스널 비주얼 브랜딩</p>
+    </div>
+    <div style="display:grid;grid-template-columns:300px 1fr;gap:48px;align-items:start;">
+      <div style="text-align:center;">
+        <img src="https://shopping-phinf.pstatic.net/main_5984641/59846413512.20260501073528.jpg?type=w300" alt="퍼스널 비주얼 브랜딩 책 표지" style="width:100%;max-width:300px;border-radius:12px;box-shadow:0 20px 60px rgba(0,0,0,0.5);">
+      </div>
+      <div>
+        <div style="display:inline-block;padding:4px 12px;background:rgba(139,92,246,0.1);border-radius:6px;font-size:12px;color:#8b5cf6;font-weight:600;letter-spacing:1px;margin-bottom:16px;">BESTSELLER / NEW RELEASE</div>
+        <h2 style="font-size:36px;font-weight:900;color:#f8fafc;margin:0 0 12px;">퍼스널 비주얼 브랜딩</h2>
+        <p style="font-size:16px;color:#94a3b8;font-style:italic;margin:0 0 24px;">"당신이 입을 떼기도 전, 0.1초 만에 승부는 결정됩니다."</p>
+        <div style="display:grid;grid-template-columns:auto 1fr;gap:8px 24px;margin-bottom:24px;font-size:15px;">
+          <span style="color:#64748b;">저자</span><span style="color:#f8fafc;">임창식 (테드창)</span>
+          <span style="color:#64748b;">출판사</span><span style="color:#f8fafc;">원주문화예술관광협회</span>
+          <span style="color:#64748b;">발행일</span><span style="color:#f8fafc;">2026년 5월 5일</span>
+          <span style="color:#64748b;">도서 정가</span><span style="color:#f8fafc;font-weight:600;">43,200원 (최저가 무료배송)</span>
+        </div>
+        <p style="color:#94a3b8;font-size:15px;line-height:1.8;margin:0 0 32px;">프로필 사진 한 장이 수백 페이지의 자기소개서보다 강력한 힘을 발휘하는 SNS 시대의 필독서. 30년 경력의 베테랑 사진작가 임창식 대표가 제안하는 퍼스널 비주얼 브랜딩(PVB) 전략을 담았습니다.</p>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:28px;">
+          <div style="background:rgba(139,92,246,0.05);border:1px solid rgba(139,92,246,0.1);border-radius:10px;padding:20px;">
+            <div style="font-size:12px;color:#8b5cf6;font-weight:700;margin-bottom:6px;">01</div>
+            <h4 style="font-size:15px;font-weight:700;color:#f8fafc;margin:0 0 6px;">0.1초의 심판</h4>
+            <p style="font-size:13px;color:#94a3b8;margin:0;line-height:1.5;">찰나의 첫인상 속에서 신뢰와 전문성을 확보하는 비주얼 설계법</p>
+          </div>
+          <div style="background:rgba(139,92,246,0.05);border:1px solid rgba(139,92,246,0.1);border-radius:10px;padding:20px;">
+            <div style="font-size:12px;color:#8b5cf6;font-weight:700;margin-bottom:6px;">02</div>
+            <h4 style="font-size:15px;font-weight:700;color:#f8fafc;margin:0 0 6px;">이미지는 명함이다</h4>
+            <p style="font-size:13px;color:#94a3b8;margin:0;line-height:1.5;">내가 도달할 미래의 비전을 시각화하여 내 삶의 판도를 바꾸는 힘</p>
+          </div>
+          <div style="background:rgba(139,92,246,0.05);border:1px solid rgba(139,92,246,0.1);border-radius:10px;padding:20px;">
+            <div style="font-size:12px;color:#8b5cf6;font-weight:700;margin-bottom:6px;">03</div>
+            <h4 style="font-size:15px;font-weight:700;color:#f8fafc;margin:0 0 6px;">과학적 비주얼</h4>
+            <p style="font-size:13px;color:#94a3b8;margin:0;line-height:1.5;">MBTI 성향 보완, 색채 심리학, 생물학적 인지 결합 가이드</p>
+          </div>
+        </div>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;">
+          <a href="https://www.kyobobook.co.kr" target="_blank" style="display:inline-block;padding:14px 28px;background:rgb(0,47,90);border-radius:8px;color:#fff;text-decoration:none;font-size:15px;font-weight:600;">📚 교보문고에서 구매</a>
+          <a href="https://www.coupang.com" target="_blank" style="display:inline-block;padding:14px 28px;background:rgb(0,116,228);border-radius:8px;color:#fff;text-decoration:none;font-size:15px;font-weight:600;">🛒 쿠팡에서 구매</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AI EDUCATION SECTION -->
+<section id="ai-edu" style="padding:100px 0;position:relative;">
+  <div style="max-width:1200px;margin:0 auto;padding:0 32px;">
+    <div style="text-align:center;margin-bottom:64px;">
+      <h2 style="font-size:16px;font-weight:700;color:#8b5cf6;letter-spacing:3px;margin:0 0 12px;">AI EDUCATION</h2>
+      <p style="font-size:18px;color:#94a3b8;margin:0;">왕초보 AI 활용법 (ChatGPT · Gemini)</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:40px;">
+      <div style="background:rgba(139,92,246,0.03);border:1px solid rgba(139,92,246,0.1);border-radius:12px;padding:20px;text-align:center;">
+        <strong style="display:block;color:#8b5cf6;font-size:12px;letter-spacing:1px;margin-bottom:6px;">강사명</strong>
+        <span style="color:#f8fafc;font-size:15px;font-weight:600;">임창식 (테드창)</span>
+      </div>
+      <div style="background:rgba(139,92,246,0.03);border:1px solid rgba(139,92,246,0.1);border-radius:12px;padding:20px;text-align:center;">
+        <strong style="display:block;color:#8b5cf6;font-size:12px;letter-spacing:1px;margin-bottom:6px;">수강 대상</strong>
+        <span style="color:#f8fafc;font-size:15px;font-weight:600;">AI가 처음인 중장년 및 성인</span>
+      </div>
+      <div style="background:rgba(139,92,246,0.03);border:1px solid rgba(139,92,246,0.1);border-radius:12px;padding:20px;text-align:center;">
+        <strong style="display:block;color:#8b5cf6;font-size:12px;letter-spacing:1px;margin-bottom:6px;">준비물</strong>
+        <span style="color:#f8fafc;font-size:15px;font-weight:600;">스마트폰 (필수), 필기도구</span>
+      </div>
+      <div style="background:rgba(139,92,246,0.03);border:1px solid rgba(139,92,246,0.1);border-radius:12px;padding:20px;text-align:center;">
+        <strong style="display:block;color:#8b5cf6;font-size:12px;letter-spacing:1px;margin-bottom:6px;">강의 형태</strong>
+        <span style="color:#f8fafc;font-size:15px;font-weight:600;">100% 참여형 실습 수업</span>
+      </div>
+    </div>
+    <div style="display:flex;gap:8px;margin-bottom:32px;flex-wrap:wrap;justify-content:center;">
+      <button style="padding:10px 20px;background:rgba(139,92,246,0.15);border:1px solid #8b5cf6;border-radius:8px;color:#8b5cf6;font-size:14px;font-weight:600;cursor:pointer;">1개월차: 앱 설치 & 질문법</button>
+      <button style="padding:10px 20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:8px;color:#94a3b8;font-size:14px;font-weight:500;cursor:pointer;">2개월차: 일상 생활 활용</button>
+      <button style="padding:10px 20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:8px;color:#94a3b8;font-size:14px;font-weight:500;cursor:pointer;">3개월차: 이미지 & 음악 생성</button>
+      <button style="padding:10px 20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:8px;color:#94a3b8;font-size:14px;font-weight:500;cursor:pointer;">4개월차: 영상 제작 & 그림책</button>
+    </div>
+    <div style="background:rgba(139,92,246,0.03);border-top:3px solid #8b5cf6;border-radius:12px 12px 0 0;padding:40px;">
+      <h3 style="font-size:22px;font-weight:700;color:#f8fafc;margin:0 0 16px;">1개월: 기초 다지기와 올바른 대화 습관</h3>
+      <p style="color:#94a3b8;font-size:15px;margin:0 0 32px;line-height:1.7;">스마트폰에 비서(챗GPT, 제미나이)를 가입하고 음성 대화법 및 올바른 질문 공식을 배웁니다.</p>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
+        <div style="background:rgba(139,92,246,0.05);border:1px solid rgba(139,92,246,0.1);border-radius:10px;padding:24px;">
+          <div style="display:inline-block;padding:3px 10px;background:rgba(139,92,246,0.15);border-radius:4px;font-size:12px;color:#8b5cf6;font-weight:600;margin-bottom:12px;">1~2회차</div>
+          <h4 style="font-size:16px;font-weight:700;color:#f8fafc;margin:0 0 8px;">AI 비서 앱 설치 및 비교</h4>
+          <p style="color:#94a3b8;font-size:14px;margin:0;line-height:1.6;">스마트폰에 가입 및 대화창 조율법. 비서별 특징 파악하기.</p>
+        </div>
+        <div style="background:rgba(139,92,246,0.05);border:1px solid rgba(139,92,246,0.1);border-radius:10px;padding:24px;">
+          <div style="display:inline-block;padding:3px 10px;background:rgba(139,92,246,0.15);border-radius:4px;font-size:12px;color:#8b5cf6;font-weight:600;margin-bottom:12px;">3~4회차</div>
+          <h4 style="font-size:16px;font-weight:700;color:#f8fafc;margin:0 0 8px;">음성 대화 및 프롬프트 대화 기본</h4>
+          <p style="color:#94a3b8;font-size:14px;margin:0;line-height:1.6;">입력 없이 음성 수다 나누기. 효과적인 대답을 얻는 질문 템플릿.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ACTIVITY GALLERY SECTION -->
+<section id="gallery" style="padding:100px 0;position:relative;background:rgba(139,92,246,0.02);">
+  <div style="max-width:1200px;margin:0 auto;padding:0 32px;">
+    <div style="text-align:center;margin-bottom:64px;">
+      <h2 style="font-size:16px;font-weight:700;color:#8b5cf6;letter-spacing:3px;margin:0 0 12px;">ACTIVITY GALLERY</h2>
+      <p style="font-size:18px;color:#94a3b8;margin:0;">사진 촬영 및 AI 미디어 강의 생생한 현장 기록</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;">
+      <div style="background:rgba(139,92,246,0.03);border:1px solid rgba(139,92,246,0.1);border-radius:16px;overflow:hidden;">
+        <div style="padding:20px 20px 0;">
+          <div style="display:inline-block;padding:3px 10px;background:rgba(139,92,246,0.15);border-radius:4px;font-size:11px;color:#8b5cf6;font-weight:600;letter-spacing:1px;margin-bottom:12px;">PHOTO</div>
+          <h4 style="font-size:16px;font-weight:700;color:#f8fafc;margin:0 0 8px;">미디어 교육 강의</h4>
+          <p style="color:#94a3b8;font-size:13px;line-height:1.6;margin:0;">전국 어디나 초·중·고등학교 사진 및 영상 제작 전담 출강 현장</p>
+        </div>
+        <div style="height:160px;background:linear-gradient(135deg,rgba(139,92,246,0.2),rgba(217,70,239,0.1));margin-top:16px;"></div>
+      </div>
+      <div style="background:rgba(139,92,246,0.03);border:1px solid rgba(139,92,246,0.1);border-radius:16px;overflow:hidden;">
+        <div style="padding:20px 20px 0;">
+          <div style="display:inline-block;padding:3px 10px;background:rgba(217,70,239,0.15);border-radius:4px;font-size:11px;color:#d946ef;font-weight:600;letter-spacing:1px;margin-bottom:12px;">FILM</div>
+          <h4 style="font-size:16px;font-weight:700;color:#f8fafc;margin:0 0 8px;">영화 제작 메이킹</h4>
+          <p style="color:#94a3b8;font-size:13px;line-height:1.6;margin:0;">독립 단편영화 &lt;바퀴와 바닐라&gt; 장애인 통합 스태프들과의 촬영 스케치</p>
+        </div>
+        <div style="height:160px;background:linear-gradient(135deg,rgba(217,70,239,0.2),rgba(139,92,246,0.1));margin-top:16px;"></div>
+      </div>
+      <div style="background:rgba(139,92,246,0.03);border:1px solid rgba(139,92,246,0.1);border-radius:16px;overflow:hidden;">
+        <div style="padding:20px 20px 0;">
+          <div style="display:inline-block;padding:3px 10px;background:rgba(99,102,241,0.15);border-radius:4px;font-size:11px;color:#6366f1;font-weight:600;letter-spacing:1px;margin-bottom:12px;">AI ART</div>
+          <h4 style="font-size:16px;font-weight:700;color:#f8fafc;margin:0 0 8px;">AI 스마트폰 이미지 생성 실습</h4>
+          <p style="color:#94a3b8;font-size:13px;line-height:1.6;margin:0;">Gemini 및 ChatGPT 모바일을 활용한 그림책 삽화 및 디지털 아트 교육</p>
+        </div>
+        <div style="height:160px;background:linear-gradient(135deg,rgba(99,102,241,0.2),rgba(139,92,246,0.1));margin-top:16px;"></div>
+      </div>
+      <div style="background:rgba(139,92,246,0.03);border:1px solid rgba(139,92,246,0.1);border-radius:16px;overflow:hidden;">
+        <div style="padding:20px 20px 0;">
+          <div style="display:inline-block;padding:3px 10px;background:rgba(139,92,246,0.15);border-radius:4px;font-size:11px;color:#8b5cf6;font-weight:600;letter-spacing:1px;margin-bottom:12px;">PHOTO</div>
+          <h4 style="font-size:16px;font-weight:700;color:#f8fafc;margin:0 0 8px;">스마트폰 인생사진 남기기</h4>
+          <p style="color:#94a3b8;font-size:13px;line-height:1.6;margin:0;">AK PLAZA 문화아카데미 등 중장년 및 일반인 대상 실전 스마트폰 촬영술 강좌</p>
+        </div>
+        <div style="height:160px;background:linear-gradient(135deg,rgba(139,92,246,0.2),rgba(99,102,241,0.1));margin-top:16px;"></div>
+      </div>
+      <div style="background:rgba(139,92,246,0.03);border:1px solid rgba(139,92,246,0.1);border-radius:16px;overflow:hidden;">
+        <div style="padding:20px 20px 0;">
+          <div style="display:inline-block;padding:3px 10px;background:rgba(99,102,241,0.15);border-radius:4px;font-size:11px;color:#6366f1;font-weight:600;letter-spacing:1px;margin-bottom:12px;">AI ART</div>
+          <h4 style="font-size:16px;font-weight:700;color:#f8fafc;margin:0 0 8px;">메타버스 가상학습 교실 운영</h4>
+          <p style="color:#94a3b8;font-size:13px;line-height:1.6;margin:0;">메타버스 플랫폼을 활용한 가상학습 교실 설계 및 교육 콘텐츠 제작</p>
+        </div>
+        <div style="height:160px;background:linear-gradient(135deg,rgba(99,102,241,0.2),rgba(217,70,239,0.1));margin-top:16px;"></div>
+      </div>
+      <div style="background:rgba(139,92,246,0.03);border:1px solid rgba(139,92,246,0.1);border-radius:16px;overflow:hidden;">
+        <div style="padding:20px 20px 0;">
+          <div style="display:inline-block;padding:3px 10px;background:rgba(217,70,239,0.15);border-radius:4px;font-size:11px;color:#d946ef;font-weight:600;letter-spacing:1px;margin-bottom:12px;">FILM</div>
+          <h4 style="font-size:16px;font-weight:700;color:#f8fafc;margin:0 0 8px;">학성동 아카이브 프로젝트</h4>
+          <p style="color:#94a3b8;font-size:13px;line-height:1.6;margin:0;">지역 역사를 기록하는 학성동 아카이브 다큐멘터리 영상 제작 프로젝트</p>
+        </div>
+        <div style="height:160px;background:linear-gradient(135deg,rgba(217,70,239,0.2),rgba(99,102,241,0.1));margin-top:16px;"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY & BLOG SECTION -->
+<section style="padding:100px 0;position:relative;">
+  <div style="max-width:1200px;margin:0 auto;padding:0 32px;">
+    <div style="text-align:center;margin-bottom:64px;">
+      <h2 style="font-size:16px;font-weight:700;color:#8b5cf6;letter-spacing:3px;margin:0 0 12px;">GALLERY & BLOG</h2>
+      <p style="font-size:18px;color:#94a3b8;margin:0;">테드창의 최신 작업 및 소식</p>
+    </div>
+    <div style="background:rgba(139,92,246,0.03);border:1px solid rgba(139,92,246,0.1);border-radius:16px;padding:60px 40px;text-align:center;">
+      <p style="color:#94a3b8;font-size:16px;margin:0;">✨ 새로운 콘텐츠가 곧 업데이트될 예정입니다. 많은 기대 부탁드립니다!</p>
+    </div>
+  </div>
+</section>
+
+<!-- GET IN TOUCH SECTION -->
+<section id="contact" style="padding:100px 0;position:relative;background:rgba(139,92,246,0.02);">
+  <div style="max-width:1200px;margin:0 auto;padding:0 32px;">
+    <div style="text-align:center;margin-bottom:64px;">
+      <h2 style="font-size:16px;font-weight:700;color:#8b5cf6;letter-spacing:3px;margin:0 0 12px;">GET IN TOUCH</h2>
+      <p style="font-size:18px;color:#94a3b8;margin:0;">언제든지 편하게 연락 주세요</p>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;">
+      <div>
+        <h3 style="font-size:18px;font-weight:700;color:#f8fafc;margin:0 0 24px;">출강 및 촬영 문의 채널</h3>
+        <div style="display:flex;flex-direction:column;gap:16px;">
+          <div style="background:rgba(139,92,246,0.03);border:1px solid rgba(139,92,246,0.1);border-radius:12px;padding:24px;">
+            <h4 style="font-size:14px;color:#8b5cf6;margin:0 0 8px;font-weight:600;">📞 전화번호 (대표전화)</h4>
+            <p style="color:#f8fafc;font-size:20px;font-weight:700;margin:0;">010-0000-0000</p>
+          </div>
+          <div style="background:rgba(139,92,246,0.03);border:1px solid rgba(139,92,246,0.1);border-radius:12px;padding:24px;">
+            <h4 style="font-size:14px;color:#8b5cf6;margin:0 0 8px;font-weight:600;">✉️ 이메일</h4>
+            <p style="color:#f8fafc;font-size:16px;margin:0;">tedchang@example.com</p>
+          </div>
+          <div style="background:rgba(139,92,246,0.03);border:1px solid rgba(139,92,246,0.1);border-radius:12px;padding:24px;">
+            <h4 style="font-size:14px;color:#8b5cf6;margin:0 0 8px;font-weight:600;">📍 테드창 스튜디오 주소</h4>
+            <p style="color:#f8fafc;font-size:15px;margin:0;">강원특별자치도 원주시 명륜동</p>
+          </div>
+          <div style="background:rgba(139,92,246,0.03);border:1px solid rgba(139,92,246,0.1);border-radius:12px;padding:24px;text-align:center;">
+            <h4 style="font-size:14px;color:#8b5cf6;margin:0 0 12px;font-weight:600;">📱 모바일 포트폴리오 QR</h4>
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://tedchang-work.blogspot.com" alt="홈페이지 QR코드" style="width:120px;height:120px;border-radius:12px;background:#fff;padding:8px;">
+          </div>
+        </div>
+      </div>
+      <div style="background:rgba(139,92,246,0.03);border-left:3px solid #8b5cf6;border-radius:0 16px 16px 0;padding:48px 40px;display:flex;flex-direction:column;justify-content:center;">
+        <h3 style="font-size:22px;font-weight:700;color:#f8fafc;margin:0 0 16px;">온라인 문의 접수</h3>
+        <p style="color:#94a3b8;font-size:15px;line-height:1.7;margin:0 0 32px;">강의, 촬영, 협업 등 어떤 문의든 편하게 남겨주세요. 24시간 이내에 답변 드리겠습니다.</p>
+        <a href="mailto:tedchang@example.com" style="display:inline-block;padding:16px 32px;background:linear-gradient(135deg,#8b5cf6,#d946ef);border-radius:8px;color:#fff;text-decoration:none;font-size:16px;font-weight:700;text-align:center;box-shadow:0 4px 20px rgba(139,92,246,0.3);">이메일 문의 보내기</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer style="padding:40px 0;border-top:1px solid rgba(139,92,246,0.1);">
+  <div style="max-width:1200px;margin:0 auto;padding:0 32px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;">
+    <p style="color:#64748b;font-size:13px;margin:0;">© 2026 Lim Chang-Sik (Ted Chang). All Rights Reserved.</p>
+    <nav>
+      <ul style="list-style:none;margin:0;padding:0;display:flex;gap:24px;">
+        <li><a href="#about" style="color:#94a3b8;text-decoration:none;font-size:13px;">소개</a></li>
+        <li><a href="#career" style="color:#94a3b8;text-decoration:none;font-size:13px;">업적</a></li>
+        <li><a href="#ai-edu" style="color:#94a3b8;text-decoration:none;font-size:13px;">AI 강좌</a></li>
+        <li><a href="#gallery" style="color:#94a3b8;text-decoration:none;font-size:13px;">갤러리</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
