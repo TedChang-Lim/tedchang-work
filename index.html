@@ -1720,6 +1720,60 @@ function handleFormSubmit(event) {
 <style>
 /* Injected to hide Blogger bar */
 #navbar-iframe, .navbar, .blogger-gear, .quickedit, .admin-bar, .comment-action, .feed-links, .home-link-wrapper, .home-link { display: none !important; visibility: hidden !important; height: 0 !important; }
+
+/* AI Book Series custom styles */
+.ai-book-item {
+  padding: 15px 10px;
+  text-align: center;
+  transition: var(--transition-smooth);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.ai-book-cover-img {
+  height: 280px;
+  max-width: 100%;
+  object-fit: contain;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  border-radius: 6px;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.ai-book-item:hover .ai-book-cover-img {
+  transform: translateY(-8px) scale(1.04);
+  box-shadow: 0 20px 45px rgba(139, 92, 246, 0.3) !important;
+}
+.ai-book-qr-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 15px;
+  background: rgba(255,255,255,0.03);
+  padding: 8px 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.06);
+  width: 100%;
+  justify-content: center;
+  transition: var(--transition-smooth);
+}
+.ai-book-qr-container:hover {
+  background: rgba(255,255,255,0.06);
+  border-color: rgba(139, 92, 246, 0.2);
+}
+.ai-book-qr-container img {
+  width: 50px;
+  height: 50px;
+  border-radius: 4px;
+  background: #fff;
+  padding: 3px;
+  flex-shrink: 0;
+}
+.ai-book-qr-text {
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  text-align: left;
+  line-height: 1.4;
+}
 </style>
 </head>
 <body>
@@ -1822,7 +1876,7 @@ function handleFormSubmit(event) {
               저는 <strong>아시아나항공 기술팀(정비 부문) 엔지니어 출신</strong>으로, 기계와 시스템의 정밀한 메커니즘을 과학적으로 분석하는 특별한 시선을 가졌습니다. 지난 30년간 사진가 및 <strong>영상 감독&#183;크리에이터</strong>로 활동하며, 이러한 엔지니어적 논리와 예술적 시각 서사를 하나로 결합한 독창적인 비주얼 작품을 제작해 왔습니다.
             </p>
 <p>
-              2026년 5월 출간된 저서 <strong>&#12298;퍼스널 비주얼 브랜딩(Personal Visual Branding)&#12299;</strong>은 타인의 무의식을 장악하는 '0.1초의 첫인상 설계'와 '미래의 자아를 미리 보여주는 이미지 명함' 철학을 집대성한 결과물입니다. MBTI별 이미지 보완 전략, 색채 심리학, 생물학적 인지 특성을 결합하여 개인의 정체성을 시각적 데이터로 치환하는 차별화된 브랜딩 솔루션을 제시합니다.
+              2026년 5월 출간된 저서 <strong>&#12298;퍼스널 비주얼 브랜딩(Personal Visual Branding)&#12299;</strong>에 이어, 2026년 6월에는 1인 창업자와 연구자를 위한 <strong>&#12298;초가성비 AI 에이전트 구축 가이드&#12299;</strong>, <strong>&#12298;AI 에이전트 협업 대화록&#12299;</strong>, <strong>&#12298;맥북 로컬 AI 완전 정복 가이드&#12299;</strong> 등 3종의 AI 지식 도서 시리즈를 집필 및 출간하여 글로벌 디지털 퍼블리싱을 실천하고 있습니다.
             </p>
 <p>
               현재 명륜동에서 <strong>[테드창 스튜디오 (Ted Chang Studio)]</strong>를 운영하며 제품 사진과 영상 제작을 전문으로 하고 있습니다. 경복대학교 대학원 AI기반 XR시뮬레이션 미디어콘텐츠 석사 연구원으로서, 사진&#183;영상&#183;미디어를 인공지능(AI)과 접목하여 현대인의 업무 생산성을 비약적으로 높이는 독보적인 AI 융합 미디어 교육 과정을 활발히 진행하고 있습니다.
@@ -2180,6 +2234,151 @@ function handleFormSubmit(event) {
 </div>
 </div>
 </section>
+<!-- AI Agent Book Series Section -->
+<section class='book-section scroll-reveal' id='ai-books' style='background: var(--bg-primary); padding: 80px 0; border-top: 1px solid rgba(255,255,255,0.05);'>
+<div class='container'>
+<div class='section-header' style='text-align: center; margin-bottom: 60px;'>
+<h2 class='section-title' style='font-family: var(--font-title); font-size: 2.2rem; font-weight: 800; color: #fff; letter-spacing: 2px; margin-bottom: 10px;'>AI AGENT BOOK SERIES</h2>
+<p class='section-subtitle-text' style='color: var(--text-muted); font-size: 1.05rem;'>글로벌 마켓 껌로드(Gumroad) 공식 출간 및 베스트셀러 가이드북</p>
+</div>
+
+<!-- 한글판 3종 -->
+<div style='margin-bottom: 60px;'>
+<h3 style='font-family: var(--font-title); font-size: 1.4rem; color: #fff; margin-bottom: 30px; border-left: 4px solid var(--accent-violet); padding-left: 12px; font-weight: 700; display: flex; align-items: center; gap: 8px;'>
+<span>🇰🇷</span> AI 에이전트 마스터 클래스 (한글판)
+</h3>
+<div style='display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px;'>
+
+<!-- 한글 1권 -->
+<div class='ai-book-item'>
+<div>
+<div style='height: 280px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;'>
+<img alt='초가성비 AI 에이전트 구축 가이드 표지' class='ai-book-cover-img' src='images/ai_agent_guide_cover_ko.png'/>
+</div>
+<h4 style='color: #fff; font-size: 1.1rem; font-weight: 700; margin-bottom: 8px; font-family: var(--font-title);'>① 초가성비 AI 에이전트 구축 가이드</h4>
+<p style='color: var(--text-muted); font-size: 0.85rem; line-height: 1.6; min-height: 48px; margin-bottom: 20px;'>비싼 유료 구독 없이 월 4달러대로 24시간 가동하는 나만의 AI 에이전트 구축 실전</p>
+</div>
+<div style='width: 100%;'>
+<a class='btn btn-primary' href='https://nanalicious47.gumroad.com/l/ai-agent-guide-bundle' target='_blank' style='display: inline-flex; width: 100%; justify-content: center; background: var(--accent-violet); border-color: var(--accent-violet); color: #fff; font-weight: 600; padding: 12px 0; border-radius: 30px; text-decoration: none; font-size: 0.9rem; transition: var(--transition-smooth);'>Gumroad에서 구매하기</a>
+<div class='ai-book-qr-container'>
+<img src='https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://nanalicious47.gumroad.com/l/ai-agent-guide-bundle' alt='QR Code' />
+<span class='ai-book-qr-text'>스마트폰 카메라 스캔<br/>(모바일 즉시 구매)</span>
+</div>
+</div>
+</div>
+
+<!-- 한글 2권 -->
+<div class='ai-book-item'>
+<div>
+<div style='height: 280px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;'>
+<img alt='AI 에이전트 협업 대화록 표지' class='ai-book-cover-img' src='images/guide2_cover.png'/>
+</div>
+<h4 style='color: #fff; font-size: 1.1rem; font-weight: 700; margin-bottom: 8px; font-family: var(--font-title);'>② AI 에이전트 협업 대화록</h4>
+<p style='color: var(--text-muted); font-size: 0.85rem; line-height: 1.6; min-height: 48px; margin-bottom: 20px;'>두 인공지능 에이전트(해나와 AG)가 책을 공동 집필하며 나눈 30일간의 생생한 대화록</p>
+</div>
+<div style='width: 100%;'>
+<a class='btn btn-primary' href='https://nanalicious47.gumroad.com/l/ai-agent-guide-bundle' target='_blank' style='display: inline-flex; width: 100%; justify-content: center; background: var(--accent-violet); border-color: var(--accent-violet); color: #fff; font-weight: 600; padding: 12px 0; border-radius: 30px; text-decoration: none; font-size: 0.9rem; transition: var(--transition-smooth);'>Gumroad에서 구매하기</a>
+<div class='ai-book-qr-container'>
+<img src='https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://nanalicious47.gumroad.com/l/ai-agent-guide-bundle' alt='QR Code' />
+<span class='ai-book-qr-text'>스마트폰 카메라 스캔<br/>(모바일 즉시 구매)</span>
+</div>
+</div>
+</div>
+
+<!-- 한글 3권 -->
+<div class='ai-book-item'>
+<div>
+<div style='height: 280px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;'>
+<img alt='맥북 로컬 AI 완전 정복 가이드 표지' class='ai-book-cover-img' src='images/local_ai_guide_cover_ko.png'/>
+</div>
+<h4 style='color: #fff; font-size: 1.1rem; font-weight: 700; margin-bottom: 8px; font-family: var(--font-title);'>③ 맥북 로컬 AI 완전 정복 가이드</h4>
+<p style='color: var(--text-muted); font-size: 0.85rem; line-height: 1.6; min-height: 48px; margin-bottom: 20px;'>애플 실리콘 맥북 환경에서 인터넷 없이 100% 오프라인으로 거대 언어 모델 구동</p>
+</div>
+<div style='width: 100%;'>
+<a class='btn btn-primary' href='https://nanalicious47.gumroad.com/l/ai-agent-guide-bundle' target='_blank' style='display: inline-flex; width: 100%; justify-content: center; background: var(--accent-violet); border-color: var(--accent-violet); color: #fff; font-weight: 600; padding: 12px 0; border-radius: 30px; text-decoration: none; font-size: 0.9rem; transition: var(--transition-smooth);'>Gumroad에서 구매하기</a>
+<div class='ai-book-qr-container'>
+<img src='https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://nanalicious47.gumroad.com/l/ai-agent-guide-bundle' alt='QR Code' />
+<span class='ai-book-qr-text'>스마트폰 카메라 스캔<br/>(모바일 즉시 구매)</span>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<!-- 영문판 3종 -->
+<div>
+<h3 style='font-family: var(--font-title); font-size: 1.4rem; color: #fff; margin-bottom: 30px; border-left: 4px solid var(--accent-indigo); padding-left: 12px; font-weight: 700; display: flex; align-items: center; gap: 8px;'>
+<span>🇺🇸</span> AI Agent Master Class (English Edition)
+</h3>
+<div style='display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px;'>
+
+<!-- 영문 1권 -->
+<div class='ai-book-item'>
+<div>
+<div style='height: 280px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;'>
+<img alt='Ultra-Low-Cost AI Agent Setup Guide Cover' class='ai-book-cover-img' src='images/guide1_cover_en.png'/>
+</div>
+<h4 style='color: #fff; font-size: 1.1rem; font-weight: 700; margin-bottom: 8px; font-family: var(--font-title);'>Guide ① Setup Guide</h4>
+<p style='color: var(--text-muted); font-size: 0.85rem; line-height: 1.6; min-height: 48px; margin-bottom: 20px;'>Run your own AI agents 24/7 for around $4 a month without expensive paid subscriptions.</p>
+</div>
+<div style='width: 100%;'>
+<a class='btn btn-primary' href='https://nanalicious47.gumroad.com/l/ai-agent-guide-bundle-en' target='_blank' style='display: inline-flex; width: 100%; justify-content: center; background: var(--accent-indigo); border-color: var(--accent-indigo); color: #fff; font-weight: 600; padding: 12px 0; border-radius: 30px; text-decoration: none; font-size: 0.9rem; transition: var(--transition-smooth);'>Buy on Gumroad</a>
+<div class='ai-book-qr-container'>
+<img src='https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://nanalicious47.gumroad.com/l/ai-agent-guide-bundle-en' alt='QR Code' />
+<span class='ai-book-qr-text'>Scan QR Code<br/>(Buy on Mobile)</span>
+</div>
+</div>
+</div>
+
+<!-- 영문 2권 -->
+<div class='ai-book-item'>
+<div>
+<div style='height: 280px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;'>
+<img alt='AI Agent Collaboration Transcripts Cover' class='ai-book-cover-img' src='images/guide2_cover_en.png'/>
+</div>
+<h4 style='color: #fff; font-size: 1.1rem; font-weight: 700; margin-bottom: 8px; font-family: var(--font-title);'>Guide ② Transcripts</h4>
+<p style='color: var(--text-muted); font-size: 0.85rem; line-height: 1.6; min-height: 48px; margin-bottom: 20px;'>Actual 30-day collaboration logs of two AI agents cooperating to write a book.</p>
+</div>
+<div style='width: 100%;'>
+<a class='btn btn-primary' href='https://nanalicious47.gumroad.com/l/ai-agent-guide-bundle-en' target='_blank' style='display: inline-flex; width: 100%; justify-content: center; background: var(--accent-indigo); border-color: var(--accent-indigo); color: #fff; font-weight: 600; padding: 12px 0; border-radius: 30px; text-decoration: none; font-size: 0.9rem; transition: var(--transition-smooth);'>Buy on Gumroad</a>
+<div class='ai-book-qr-container'>
+<img src='https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://nanalicious47.gumroad.com/l/ai-agent-guide-bundle-en' alt='QR Code' />
+<span class='ai-book-qr-text'>Scan QR Code<br/>(Buy on Mobile)</span>
+</div>
+</div>
+</div>
+
+<!-- 영문 3권 -->
+<div class='ai-book-item'>
+<div>
+<div style='height: 280px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;'>
+<img alt='MacBook Local AI Mastery Guide Cover' class='ai-book-cover-img' src='images/guide3_cover_en.png'/>
+</div>
+<h4 style='color: #fff; font-size: 1.1rem; font-weight: 700; margin-bottom: 8px; font-family: var(--font-title);'>Guide ③ Local AI Mastery</h4>
+<p style='color: var(--text-muted); font-size: 0.85rem; line-height: 1.6; min-height: 48px; margin-bottom: 20px;'>A technical guide to running large language models 100% offline on Macs.</p>
+</div>
+<div style='width: 100%;'>
+<a class='btn btn-primary' href='https://nanalicious47.gumroad.com/l/ai-agent-guide-bundle-en' target='_blank' style='display: inline-flex; width: 100%; justify-content: center; background: var(--accent-indigo); border-color: var(--accent-indigo); color: #fff; font-weight: 600; padding: 12px 0; border-radius: 30px; text-decoration: none; font-size: 0.9rem; transition: var(--transition-smooth);'>Buy on Gumroad</a>
+<div class='ai-book-qr-container'>
+<img src='https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://nanalicious47.gumroad.com/l/ai-agent-guide-bundle-en' alt='QR Code' />
+<span class='ai-book-qr-text'>Scan QR Code<br/>(Buy on Mobile)</span>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+</section>
+
+</div>
+</div>
+
+</div>
+</section>
+
 <!-- Curriculum Section -->
 <section class='curriculum-section' id='curriculum'>
 <div class='container'>
