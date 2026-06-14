@@ -1774,6 +1774,31 @@ function handleFormSubmit(event) {
   text-align: left;
   line-height: 1.4;
 }
+
+/* Split section header styles */
+.section-header-split {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 50px;
+  align-items: center;
+  margin-bottom: 60px;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  padding-bottom: 40px;
+}
+@media (max-width: 768px) {
+  .section-header-split {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+  }
+  .section-header-split > div:last-child {
+    border-left: none !important;
+    padding-left: 0 !important;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    padding-top: 24px;
+  }
+}
 </style>
 </head>
 <body>
@@ -2237,9 +2262,20 @@ function handleFormSubmit(event) {
 <!-- AI Agent Book Series Section -->
 <section class='book-section scroll-reveal' id='ai-books' style='background: var(--bg-primary); padding: 80px 0; border-top: 1px solid rgba(255,255,255,0.05);'>
 <div class='container'>
-<div class='section-header' style='text-align: center; margin-bottom: 60px;'>
-<h2 class='section-title' style='font-family: var(--font-title); font-size: 2.2rem; font-weight: 800; color: #fff; letter-spacing: 2px; margin-bottom: 10px;'>AI AGENT BOOK SERIES</h2>
-<p class='section-subtitle-text' style='color: var(--text-muted); font-size: 1.05rem;'>글로벌 마켓 껌로드(Gumroad) 공식 출간 및 베스트셀러 가이드북</p>
+<div class='section-header-split'>
+  <div style='text-align: left;'>
+    <h2 class='section-title' style='font-family: var(--font-title); font-size: 2.4rem; font-weight: 800; color: #fff; letter-spacing: 2px; margin-bottom: 15px;'>AI AGENT<br/>BOOK SERIES</h2>
+    <p class='section-subtitle-text' style='color: var(--accent-violet); font-size: 1.05rem; font-weight: 600; margin-bottom: 5px;'>글로벌 마켓 껌로드(Gumroad) 공식 출간</p>
+    <p class='section-subtitle-text' style='color: var(--text-muted); font-size: 0.9rem;'>베스트셀러 가이드북 시리즈</p>
+  </div>
+  <div style='text-align: left; border-left: 2px solid rgba(139, 92, 246, 0.2); padding-left: 30px;'>
+    <p style='color: #fff; font-size: 1.15rem; font-weight: 600; line-height: 1.6; margin-bottom: 12px;'>
+      매달 지출되는 비싼 인공지능 구독료가 부담스러우셨나요?
+    </p>
+    <p style='color: var(--text-muted); font-size: 0.95rem; line-height: 1.7;'>
+      30년 경력의 베테랑 IT 엔지니어가 직접 검증한 초가성비 솔루션. 월 4달러대로 24시간 가동되는 개인형 AI 에이전트 구축부터, 맥북 자체 성능을 극한으로 활용한 100% 오프라인 로컬 인공지능 실행까지, 당신의 생산성을 비약적으로 끌어올려 줄 검증된 실전 가이드북입니다.
+    </p>
+  </div>
 </div>
 
 <!-- 한글판 3종 -->
